@@ -62,3 +62,18 @@
 .signup {
   background-image: url(./images/signup.jpg);
 }
+img-comparison-slider {
+  outline: none;
+  --divider-width: 2px;
+  --divider-color: rgb(58, 194, 128);
+  --default-handle-opacity: 0;
+  --divider-height:80% !important
+}
+.divider {
+
+  height: 80% !important;
+ 
+}
+.rendered #shadow-root{
+  display: none !important;
+}
