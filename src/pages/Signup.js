@@ -109,7 +109,7 @@ function Signup(props) {
     if (selectedValue != "" && show == 4) setshow(5);
     console.log("error in namew", errors.lname ? "true" : "false");
     if (show == 5 && !missMatchPassword && term ){
-      const response = await fetch("http://localhost:1337/api/users/register", {
+      const response = await fetch("https://backened-m-integrity-271pwlwa5-jasim-n.vercel.app/api/users/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ Name1: Namefirst,LastName:Namelast, Emails: Email, password: Password,cell:phoneValue }),
